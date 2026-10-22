@@ -1,3 +1,4 @@
+{% if langs|length > 1 %}
 <div class="text-right m-2 p-2">
   {% for lang in langs %}
     <a href="{{ lang.url }}"
@@ -5,3 +6,4 @@
     >{{ lang.name }}</a>
   {% endfor %}
 </div>
+{% endif %}
